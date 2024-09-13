@@ -1,6 +1,5 @@
 "use client";
 
-import { Avatar } from "@nextui-org/avatar";
 import {
   Dropdown,
   DropdownItem,
@@ -9,6 +8,7 @@ import {
 } from "@nextui-org/dropdown";
 
 import { useRouter } from "next/navigation";
+import { Avatar } from "@nextui-org/avatar";
 
 export default function NavbarDropdown() {
   const router = useRouter();
