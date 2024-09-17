@@ -4,22 +4,13 @@ import FXForm from "@/src/components/form/FXForm";
 import FXInput from "@/src/components/form/FXInput";
 import { useUserRegistration } from "@/src/hooks/auth.hook";
 import registerValidationSchema from "@/src/schemas/register.schema";
-import { registerUser } from "@/src/services/AuthService";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Button } from "@nextui-org/button";
-import { useMutation } from "@tanstack/react-query";
 import Link from "next/link";
-import { useEffect } from "react";
 import { FieldValues, SubmitHandler } from "react-hook-form";
 
 export default function RegisterPage() {
   const { mutate: handleUserRegistration, isPending } = useUserRegistration();
-
-  //   useEffect(() => {
-  //     if (isPending) {
-  //       // Handle Loading satate
-  //     }
-  //   }, [isPending]);
 
   const onSubmit: SubmitHandler<FieldValues> = async (data) => {
     const userData = {
