@@ -1,5 +1,6 @@
 import { Input } from "@nextui-org/input";
-import { SearchIcon } from "../../icons";
+
+import { SearchIcon } from "../../../assets/icons";
 
 export default function Landing() {
   return (

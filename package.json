@@ -9,6 +9,7 @@
     "lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix"
   },
   "dependencies": {
+    "@bangladeshi/bangladesh-address": "^1.0.5",
     "@hookform/resolvers": "^3.9.0",
     "@nextui-org/avatar": "^2.0.32",
     "@nextui-org/button": "2.0.37",

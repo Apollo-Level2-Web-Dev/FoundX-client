@@ -7,6 +7,7 @@ import {
   useEffect,
   useState,
 } from "react";
+
 import { IUser } from "../types";
 import { getCurrentUser } from "../services/AuthService";
 

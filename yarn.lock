@@ -14,6 +14,14 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
+"@bangladeshi/bangladesh-address@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.npmjs.org/@bangladeshi/bangladesh-address/-/bangladesh-address-1.0.5.tgz"
+  integrity sha512-M0WHo/XQfQ8evBitI6DqdSLDETtT+XyXoInV8t2DdboreWRVjbVRGzCk7vf/1rjlNGFNtmN3e0d6ndyU3zloFg==
+  dependencies:
+    "@types/lodash" "^4.14.168"
+    lodash "^4.17.20"
+
 "@eslint-community/eslint-utils@^4.2.0", "@eslint-community/eslint-utils@^4.4.0":
   version "4.4.0"
   resolved "https://registry.npmjs.org/@eslint-community/eslint-utils/-/eslint-utils-4.4.0.tgz"
@@ -1797,7 +1805,7 @@
   dependencies:
     "@types/lodash" "*"
 
-"@types/lodash@*":
+"@types/lodash@*", "@types/lodash@^4.14.168":
   version "4.17.7"
   resolved "https://registry.npmjs.org/@types/lodash/-/lodash-4.17.7.tgz"
   integrity sha512-8wTvZawATi/lsmNu10/j2hk1KEP0IvjubqPE3cu1Xz7xfXXt5oCq3SNUz4fMIP4XGF9Ky+Ue2tBA3hcS7LSBlA==
@@ -3652,6 +3660,11 @@ lodash.omit@^4.5.0:
   resolved "https://registry.npmjs.org/lodash.omit/-/lodash.omit-4.5.0.tgz"
   integrity sha512-XeqSp49hNGmlkj2EJlfrQFIzQ6lXdNro9sddtQzcJY8QaoC2GO0DT7xaIokHeyM+mIT0mPMlPvkYzg2xCuHdZg==
 
+lodash@^4.17.20:
+  version "4.17.21"
+  resolved "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
+
 loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz"
@@ -3753,6 +3766,7 @@ natural-compare@^1.4.0:
   version "0.0.1"
   resolved "file:"
   dependencies:
+    "@bangladeshi/bangladesh-address" "^1.0.5"
     "@hookform/resolvers" "^3.9.0"
     "@nextui-org/avatar" "^2.0.32"
     "@nextui-org/button" "2.0.37"

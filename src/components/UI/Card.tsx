@@ -2,6 +2,7 @@ import { Card as NextUiCard, CardHeader, CardFooter } from "@nextui-org/card";
 import { Button } from "@nextui-org/button";
 import { Image } from "@nextui-org/image";
 import { format } from "date-fns";
+
 import { IPost } from "@/src/types";
 
 const Card = ({ post }: { post: IPost }) => {

@@ -1,4 +1,4 @@
-import { Card as NextUiCard, CardHeader, CardFooter } from "@nextui-org/card";
+import { Card as NextUiCard } from "@nextui-org/card";
 import { Skeleton } from "@nextui-org/skeleton";
 
 const CardSkeleton = () => {
