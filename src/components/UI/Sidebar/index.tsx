@@ -17,9 +17,10 @@ const Sidebar = () => {
         <div className="h-[330px] w-full rounded-md">
           <Image
             alt="profile"
-            height={100}
+            className="w-full h-full object-cover rounded-md"
+            height={330}
             src={user?.profilePhoto as string}
-            width={100}
+            width={330}
           />
         </div>
         <div className="my-3">

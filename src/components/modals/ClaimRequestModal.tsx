@@ -1,9 +1,12 @@
 import { Button } from "@nextui-org/button";
+import { FieldValues, SubmitHandler } from "react-hook-form";
+
 import FXForm from "../form/FXForm";
 import FXInput from "../form/FXInput";
 import FXTextarea from "../form/FXTextArea";
+
 import FXModal from "./FXModal";
-import { FieldValues, SubmitHandler } from "react-hook-form";
+
 import { useAddClaimRequest } from "@/src/hooks/claimRequest.hook";
 
 interface IProps {
@@ -34,7 +37,7 @@ export default function ClaimRequestModal({ id, questions }: IProps) {
     >
       <FXForm onSubmit={onSubmit}>
         {questions.map((question, index) => (
-          <div className="mb-4" key={index}>
+          <div key={index} className="mb-4">
             <p className="mb-1">{question}</p>
             <FXInput
               label={`Answer - ${index + 1}`}

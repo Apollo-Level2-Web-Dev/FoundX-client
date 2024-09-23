@@ -3,14 +3,15 @@ import { Avatar } from "@nextui-org/avatar";
 import { format } from "date-fns";
 import { Calendar, MapPin } from "lucide-react";
 import Link from "next/link";
-
-import { IPost, IUser } from "@/src/types";
-
 import { Button } from "@nextui-org/button";
-import ImageGallery from "./ImageGallery";
+
 import ClaimRequestModal from "../../modals/ClaimRequestModal";
-import { useUser } from "@/src/context/user.provider";
 import AuthenticationModal from "../../modals/AuthenticationModal";
+
+import ImageGallery from "./ImageGallery";
+
+import { useUser } from "@/src/context/user.provider";
+import { IPost, IUser } from "@/src/types";
 
 interface IProps {
   post: IPost;
@@ -80,7 +81,7 @@ export default function Post({ post }: IProps) {
           {email !== loggedInUser?.email && (
             <div className="w-[1px] bg-default-200" />
           )}
-          <Button variant="light" className="flex-1">
+          <Button className="flex-1" variant="light">
             Share
           </Button>
         </div>

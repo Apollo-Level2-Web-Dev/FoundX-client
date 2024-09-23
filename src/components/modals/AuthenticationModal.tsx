@@ -11,9 +11,9 @@ interface IProps {
 const AuthenticationModal = ({ id }: IProps) => {
   return (
     <FXModal
-      title="Authentication"
-      buttonText="Claim Item"
       buttonClassName="flex-1"
+      buttonText="Claim Item"
+      title="Authentication"
     >
       <div>
         You are not currently logged in. Please login first to continue.
