@@ -72,7 +72,7 @@ export const getNewAccessToken = async () => {
       method: "POST",
       withCredentials: true,
       headers: {
-        cookies: `refreshToken=${refreshToken}`,
+        cookie: `refreshToken=${refreshToken}`,
       },
     });
 
